@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ristorante Con Fusion</title>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+          
+        </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        
+        <div class="container">
+            <!-- Brand Logo -->
+            <img src="./img/logo.png" class="img-fluid" width="50" alt="">
+
+            <!-- Navbar Toggler Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Collapsing Toggler List -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html"> <span class="fa fa-home "></span> Home </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./aboutus.html"> <span class="fa fa-info "></span>  About Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="fa fa-bars "></span> 
+                      Menu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#"><span class="fa fa-phone "></span> Contact Us </a>
+                  </li>
+                <li class="nav-item">
+                    <a href="" role="button" class="nav-link" data-toggle="modal" data-target="#login"><span class="fa fa-sign-in "></span> Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" role="button" class="nav-link" data-toggle="modal" data-target="#signup"><span class="fa fa-user-plus "></span> Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" data-toggle="modal" data-target="#searchexample" class="nav-link"><span class="fa fa-search "></span> Search</a>
+                </li>
+              </ul>
+            </div>
+
+        </div>
+      </nav>
+
+      <!-- Header or Jumbotron -->
+      <header>
+          <div class="container py-5">
+              <div class="row align-items-center justify-content-center">
+                  <div class="col-10 col-lg-4 col-md-5">
+                      <h3>Ristorante con Fusion</h3>
+                      <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                  </div>
+                  <div class="col-10 col-lg-3 col-md-5 offset-lg-1 my-2 my-sm-2 my-md-0 my-lg-0">
+                      <img src="./img/logo.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-10 col-lg-3 col-md-9 offset-md-3 offset-lg-1 my-3 my-sm-3 my-md-3 my-lg-0">
+                      <button class="btn  btn-grad text-bold px-5" data-toggle="modal"   title="Call Us +459630471"    data-target="#exampleModal">Reserve a Table</button>
+                  </div>
+              </div>
+          </div>
+      </header>
+
+      <!-- Modal : Login -->
+      <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-3">
+                  <h6>Username/Email: </h6>
+                </div>
+                <div class="col-8 offset-1">
+                  <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+              </div>
+
+              <div class="row align-items-center justify-content-center my-3">
+                <div class="col-3">
+                  <h6>Password: </h6>
+                </div>
+                <div class="col-8 offset-1">
+                  <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="passwordHelp" placeholder="Enter Password">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4 offset-8">
+                  <a href=""><h6>Forget Password?</h6></a>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal : Sign Up -->
+      <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-3">
+                  <h6>First Name: </h6>
+                </div>
+                <div class="col-8 offset-1">
+                  <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter First Name">
+                </div>
+              </div>
+
+              <div class="row align-items-center justify-content-center my-3">
+                <div class="col-3">
+                  <h6>Last Name: </h6>
+                </div>
+                <div class="col-8 offset-1">
+                  <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter Last Name">
+                </div>
+              </div>
+
+              <div class="row align-items-center justify-content-center my-3">
+                <div class="col-3">
+                  <h6>Username: </h6>
+                </div>
+                <div class="col-8 offset-1">
+                  <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter Unique Username">
+                </div>
+              </div>
+
+              <div class="row align-items-center justify-content-center my-3">
+                <div class="col-3">
+                  <h6>Email: </h6>
+                </div>
+                <div class="col-8 offset-1">
+                  <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+              </div>
+
+              <div class="row align-items-center justify-content-center my-3">
+                <div class="col-3">
+                  <h6>Password: </h6>
+                </div>
+                <div class="col-8 offset-1">
+                  <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="passwordHelp" placeholder="Enter Password">
+                </div>
+              </div>
+
+              <div class="row align-items-center justify-content-center my-3">
+                <div class="col-3">
+                  <h6>Confirm Password: </h6>
+                </div>
+                <div class="col-8 offset-1">
+                  <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="passwordHelp" placeholder="Confirm Password">
+                </div>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+            <!-- Modal Search -->
+      <div class="modal fade" id="searchexample" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <input type="text" class="form-control">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" placeholder="Search">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Reserve Table-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Reserve a Table</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row align-items-center justify-content-center my-3">
+                <div class="col-3">
+                 <h6>Number of Guests</h6>
+                </div>
+                <div class="col-9">
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+                  <label class="form-check-label" for="inlineRadio3">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" >
+                  <label class="form-check-label" for="inlineRadio4">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5" >
+                  <label class="form-check-label" for="inlineRadio5">5</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6" >
+                  <label class="form-check-label" for="inlineRadio3">6</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row align-items-center justify-content-center my-3">
+                <div class="col-3">
+                  <h6>Section</h6>
+                </div>
+                <div class="col-9">
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-success">Non-Smoking</button>
+                    <button type="button" class="btn btn-danger">Middle</button> 
+                  </div>
+                </div>
+              </div>
+
+              <div class="row  align-items-center justify-content-center my-3">
+                <div class="col-3">
+                  <h6>Date and Time</h6>
+                </div>
+                <div class="col-4">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Date">
+                </div>
+                <div class="col-5 ">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Time">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bread Crumb -->
+      <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="">Contact Us</li>
+            </ol>
+          </nav>
+      </div>
+
+      <div class="container">
+        <h4>Contact Us</h4>
+        <hr>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                <h4 class="font-weight-normal">Location Information</h4>
+                <div class="offset-0">
+                    <h6>Our Address</h6>
+                    <address>
+                      121, Clear Water Bay Road <br>
+                      Clear Water Bay, Kowloon <br>
+                      HONGcd KONG <br>
+                      <span class="fa fa-phone"></span> +852 1234 5678 <br>
+                      <span class="fa fa-fax"></span> +852 8765 4321 <br>
+                      <span class="fa fa-envelope"></span><a href=""> confusion@food.net</a>
+                    </address>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-primary">
+                          <input type="radio" name="options" id="option1" autocomplete="off"> Call
+                        </label>
+                        <label class="btn btn-info">
+                          <input type="radio" name="options" id="option2" autocomplete="off"><i class="fa fa-skype"></i> Skype
+                        </label>
+                        <label class="btn btn-success">
+                          <input type="radio" name="options" id="option3" autocomplete="off"> Email
+                        </label>
+                      </div>
+                  </div>
+            </div>
+    
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12" style="position: relative; right: 110px;">
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=ghana&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+            </div>
+        </div>
+      </div>
+
+      <section class="container">
+        <h4>Send us your Feedback</h4>
+        <hr>
+        <form style="max-width:600px" class="mx-auto"> 
+          <div class="form-group">
+            <label for="firstName"><h6>First Name</h6></label>
+            <input  type="name" class="form-control" id="firstName"   placeholder="Enter Your First Name">
+          </div>
+
+          <div class="form-group">
+            <label for="lastName"><h6>Last Name</h6></label>
+            <input   type="name" class="form-control" id="lastName"   placeholder="Enter Your Last Name">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1"><h6>Email address</h6></label>
+            <input type="email"   class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1"><h6>feedback</h6></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+           
+           
+           
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </section>
+
+
+      
+
+      <!-- Footer -->
+      <footer class="footer mt-5">
+        <div class="container py-5">
+          <div class="row align-items-center justify-content-center">
+            
+            <div class="col-6 col-lg-2 col-sm-6">
+              <h6>Our Link</h6>
+              <ul class="list-unstyled">
+                <li class="nav-item">
+                  <a href="" class=" ">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class=" ">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class=" ">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class=" ">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class=" ">Reserve a Table</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class=" ">Register</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-lg-3 offset-lg-1 col-sm-6">
+              <h6>Our Address</h6>
+              <address>
+                121, Clear Water Bay Road <br>
+                Clear Water Bay, Kowloon <br>
+                HONG KONG <br>
+                <span class="fa fa-phone"></span> +852 1234 5678 <br>
+                <span class="fa fa-fax"></span> +852 8765 4321 <br>
+                <span class="fa fa-envelope"></span><a href=""> confusion@food.net</a>
+              </address>
+            </div>
+
+            <div class="col-10 offset-2 col-lg-5 offset-lg-1 col-sm-10">
+              <!--Facebook-->
+              <button type="button" class="btn"><i class="fa fa-facebook fa-lg"></i></button>
+              <!--Twitter-->
+              <button type="button" class="btn"><i class="fa fa-twitter fa-lg"></i></button>
+              <!--Google +-->
+              <button type="button" class="btn"><i class="fa fa-google-plus fa-lg"></i></button>
+              <!--Linkedin-->
+              <button type="button" class="btn"><i class="fa fa-linkedin fa-lg"></i></button>
+              <!--Youtube-->
+              <button type="button" class="btn"><i class="fa fa-youtube fa-lg"></i></button>
+              <!--Mail-->
+              <button type="button" class="btn"><i class="fa fa-envelope fa-lg"></i></button>
+            </div>
+          </div>
+
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 text-center">© Copyright 2015 Ristorante Con Fusion</div>
+          </div>
+        </div>
+      </footer>
+    
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+            // javascript for tool tip
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();
+
+                // Carousel Time Set
+                $("#carouselExampleIndicators").carousel( { interval: 1000 } );
+                
+                $("#carouselButton").click(function(){
+                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
+                    $("#carouselExampleIndicators").carousel('pause');
+                    $("#carouselButton").children("span").removeClass('fa-pause');
+                    $("#carouselButton").children("span").addClass('fa-play');
+                }
+                else if ($("#carouselButton").children("span").hasClass('fa-play')){
+                    $("#carouselExampleIndicators").carousel('cycle');
+                    $("#carouselButton").children("span").removeClass('fa-play');
+                    $("#carouselButton").children("span").addClass('fa-pause');                    
+                }
+            });
+            });
+
+            // Java Script for pop over
+            $(function () {
+                $('[data-toggle="popover"]').popover()
+                })
+
+            $('#myModal').on('shown.bs.modal', function () {
+                  $('#myInput').trigger('focus')
+                })
+
+              
+            
+            
+             
+        </script>
+</body>
+
+</html>

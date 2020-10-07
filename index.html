@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ristorante Con Fusion</title>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+          
+        </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        
+        <div class="container">
+            <!-- Brand Logo -->
+            <img src="./img/logo.png" class="img-fluid" width="50" alt="">
+
+            <!-- Navbar Toggler Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Collapsing Toggler List -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> <span class="fa fa-home "></span> Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./aboutus.html"> <span class="fa fa-info "></span>  About Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="fa fa-bars "></span> 
+                      Menu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contactus.html"><span class="fa fa-phone "></span> Contact Us</a>
+                  </li>
+                <li class="nav-item">
+                    <a href="" role="button" class="nav-link" data-toggle="modal" data-target="#login"><span class="fa fa-sign-in "></span> Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" role="button" class="nav-link" data-toggle="modal" data-target="#signup"><span class="fa fa-user-plus "></span> Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" data-toggle="modal" data-target="#searchexample" class="nav-link"><span class="fa fa-search "></span> Search</a>
+                </li>
+              </ul>
+            </div>
+
+        </div>
+      </nav>
+
+      <!-- Header or Jumbotron -->
+      <header>
+          <div class="container py-5">
+              <div class="row align-items-center justify-content-center">
+                  <div class="col-10 col-lg-4 col-md-5">
+                      <h3>Ristorante con Fusion</h3>
+                      <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                  </div>
+                  <div class="col-10 col-lg-3 col-md-5 offset-lg-1 my-2 my-sm-2 my-md-0 my-lg-0">
+                      <img src="./img/logo.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-10 col-lg-3 col-md-9 offset-md-3 offset-lg-1 my-3 my-sm-3 my-md-3 my-lg-0">
+                      <button class="btn  btn-grad text-bold px-5" data-toggle="modal"   title="Call Us +459630471"    data-target="#exampleModal">Reserve a Table</button>
+                  </div>
+              </div>
+          </div>
+      </header>
+
+      <!-- Modal : Login -->
+      <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-3">
+                  <h6>Username/Email: </h6>
+                </div>
+                <div class="col-8 offset-1">
+                  <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+              </div>
+
+              <div class="row align-items-center justify-content-center my-3">
+                <div class="col-3">
+                  <h6>Password: </h6>
+                </div>
+                <div class="col-8 offset-1">
+                  <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="passwordHelp" placeholder="Enter Password">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4 offset-8">
+                  <a href=""><h6>Forget Password?</h6></a>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal : Sign Up -->
+      <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-3">
+                  <h6>First Name: </h6>
+                </div>
+                <div class="col-8 offset-1">
+                  <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter First Name">
+                </div>
+              </div>
+
+              <div class="row align-items-center justify-content-center my-3">
+                <div class="col-3">
+                  <h6>Last Name: </h6>
+                </div>
+                <div class="col-8 offset-1">
+                  <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter Last Name">
+                </div>
+              </div>
+
+              <div class="row align-items-center justify-content-center my-3">
+                <div class="col-3">
+                  <h6>Username: </h6>
+                </div>
+                <div class="col-8 offset-1">
+                  <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter Unique Username">
+                </div>
+              </div>
+
+              <div class="row align-items-center justify-content-center my-3">
+                <div class="col-3">
+                  <h6>Email: </h6>
+                </div>
+                <div class="col-8 offset-1">
+                  <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+              </div>
+
+              <div class="row align-items-center justify-content-center my-3">
+                <div class="col-3">
+                  <h6>Password: </h6>
+                </div>
+                <div class="col-8 offset-1">
+                  <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="passwordHelp" placeholder="Enter Password">
+                </div>
+              </div>
+
+              <div class="row align-items-center justify-content-center my-3">
+                <div class="col-3">
+                  <h6>Confirm Password: </h6>
+                </div>
+                <div class="col-8 offset-1">
+                  <input type="password" class="form-control" id="exampleInputPassword" aria-describedby="passwordHelp" placeholder="Confirm Password">
+                </div>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+            <!-- Modal Search -->
+      <div class="modal fade" id="searchexample" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <input type="text" class="form-control">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" placeholder="Search">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Reserve Table-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Reserve a Table</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row align-items-center justify-content-center my-3">
+                <div class="col-3">
+                 <h6>Number of Guests</h6>
+                </div>
+                <div class="col-9">
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+                  <label class="form-check-label" for="inlineRadio3">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" >
+                  <label class="form-check-label" for="inlineRadio4">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5" >
+                  <label class="form-check-label" for="inlineRadio5">5</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6" >
+                  <label class="form-check-label" for="inlineRadio3">6</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row align-items-center justify-content-center my-3">
+                <div class="col-3">
+                  <h6>Section</h6>
+                </div>
+                <div class="col-9">
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-success">Non-Smoking</button>
+                    <button type="button" class="btn btn-danger">Middle</button> 
+                  </div>
+                </div>
+              </div>
+
+              <div class="row  align-items-center justify-content-center my-3">
+                <div class="col-3">
+                  <h6>Date and Time</h6>
+                </div>
+                <div class="col-4">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Date">
+                </div>
+                <div class="col-5 ">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Time">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Carousel -->
+      <div class="container">
+        <!--The below given id is important to slide & pause & play -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <!-- Carousel Indicators : Slide -->
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+
+          
+
+          <!-- Carousel Items -->
+          <div class="carousel-inner">
+            <!-- Carousel : 1st Item -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 col-sm-10 col-10">
+                  <h3>Chicken Burger <span class="badge badge-danger">New</span> <span class="badge badge-pill badge-secondary">$4.99</span></h3>
+                  <p>A unique combination of Indian Uthappam(pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+
+                  <button class="btn btn-dark">More..</button>
+                </div>
+                <div class="col-lg-6 col-sm-10 col-10">
+                  <img src="./img/burger.png" class="img-fluid"   alt="">
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel : 2nd Item -->
+            <div class="carousel-item">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 col-sm-10 col-10">
+                  <div class="text-left">
+                    <h3>Buffet <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$9.99</span></h3>
+                  </div>
+                  <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $9.99 per person</p>
+                  <div class="text-left"><button class="btn btn-dark">More..</button></div>
+                </div>
+                <div class="col-lg-6 col-sm-10 col-10 order-lg-first">
+                  <img src="./img/buffet.png" class="img-fluid"    alt="">
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel : 3rd Item -->
+            <div class="carousel-item  ">
+              <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 col-sm-10 col-10">
+                  <h3>Steak <span class="badge badge-danger"> Limited Offer</span> <span class="badge badge-pill badge-secondary">$6.99</span></h3>
+                  <p>A unique combination of Indian Uthappam(pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+
+                  <button class="btn btn-dark">More..</button>
+                </div>
+                <div class="col-lg-6 col-sm-10 col-10">
+                  <img src="./img/steak.png" class="img-fluid"    alt="">
+                </div>
+              </div>
+            </div>      
+          </div>
+
+           
+          <!-- Carousel left right slider button -->
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <!-- Pause & Play Button -->
+        <div class="row pause-play justify-content-center">
+          <button class="btn btn-danger btn-sm" id="carouselButton">
+            <span id="carousel-button-icon" class="fa fa-pause"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container my-5">
+        <hr>
+      </div>
+
+      <!-- Item Details -->
+      <div class="container my-5">
+        <!-- Info One -->
+        <div class="row row-content justify-content-center  align-items-center my-5">
+          <div class="col-12 col-sm-12 order-sm-first order-md-last order-first col-md-3">
+              <h3>Our Lipsmacking Culinary Creations</h3>
+          </div>
+          
+          <div class="media col-12 col-sm-12  order-sm-last order-md-first order-last col-md-9 ">
+              <img class="d-flex mr-3 img-thumbnail align-self-center" style="max-width: 200px;" src="./img/pizza.jpg" alt="Uthappizza">
+              <div class="media-body my-auto">
+                  <h2>Cheese Pizza  <span class="badge badge-danger">NEW</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                  <p class="d-none d-sm-none d-md-block text-justify">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                  <button type="button" class="btn btn-dark btn-sm"><b>See More</b></button>
+              </div>
+          </div>
+        </div>
+
+        <!-- Info Two -->
+        <div class="row row-content justify-content-center  align-items-center my-5">
+          <div class="col-12 col-sm-12 order-sm-first order-first order-first col-md-3">
+              <h3>This Month's Promotions</h3>
+          </div>
+          
+          <div class="media col-12 col-sm-12  order-sm-first order-md-first order-first col-md-9 ">
+              <div class="media-body my-auto">
+                  <h2>Cheese Pasta  <span class="badge badge-danger">SPEACIAL </span> <span class="badge badge-pill badge-secondary"> $2.99</span></h2>
+                  <p class="d-none d-sm-none d-md-block text-justify">Macaroni and cheese—also called mac cheese in the US, macaroni cheese in the United Kingdom is a dish of cooked macaroni pasta and a cheese sauce, most commonly cheddar. It can also incorporate other ingredients, such as breadcrumbs, meat and vegetables.</p>
+                  <button type="button" class="btn btn-dark btn-sm"><b>See More</b></button>
+              </div>
+              <img class="d-flex ml-3 img-thumbnail align-self-center" style="max-width: 200px;" src="./img/pasta.jpg" alt="Uthappizza">
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <hr>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer mt-5">
+        <div class="container py-5">
+          <div class="row align-items-center justify-content-center">
+            
+            <div class="col-6 col-lg-2 col-sm-6">
+              <h6>Our Link</h6>
+              <ul class="list-unstyled">
+                <li class="nav-item">
+                  <a href="" class=" ">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class=" ">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class=" ">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class=" ">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class=" ">Reserve a Table</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class=" ">Register</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-lg-3 offset-lg-1 col-sm-6">
+              <h6>Our Address</h6>
+              <address>
+                121, Clear Water Bay Road <br>
+                Clear Water Bay, Kowloon <br>
+                HONGcd KONG <br>
+                <span class="fa fa-phone"></span> +852 1234 5678 <br>
+                <span class="fa fa-fax"></span> +852 8765 4321 <br>
+                <span class="fa fa-envelope"></span><a href=""> confusion@food.net</a>
+              </address>
+            </div>
+
+            <div class="col-10 offset-2 col-lg-5 offset-lg-1 col-sm-10">
+              <!--Facebook-->
+              <button type="button" class="btn"><i class="fa fa-facebook fa-lg"></i></button>
+              <!--Twitter-->
+              <button type="button" class="btn"><i class="fa fa-twitter fa-lg"></i></button>
+              <!--Google +-->
+              <button type="button" class="btn"><i class="fa fa-google-plus fa-lg"></i></button>
+              <!--Linkedin-->
+              <button type="button" class="btn"><i class="fa fa-linkedin fa-lg"></i></button>
+              <!--Youtube-->
+              <button type="button" class="btn"><i class="fa fa-youtube fa-lg"></i></button>
+              <!--Mail-->
+              <button type="button" class="btn"><i class="fa fa-envelope fa-lg"></i></button>
+            </div>
+          </div>
+
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 text-center">© Copyright 2015 Ristorante Con Fusion</div>
+          </div>
+        </div>
+      </footer>
+    
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+            // javascript for tool tip
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();
+
+                // Carousel Time Set
+                $("#carouselExampleIndicators").carousel( { interval: 1000 } );
+                
+                $("#carouselButton").click(function(){
+                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
+                    $("#carouselExampleIndicators").carousel('pause');
+                    $("#carouselButton").children("span").removeClass('fa-pause');
+                    $("#carouselButton").children("span").addClass('fa-play');
+                }
+                else if ($("#carouselButton").children("span").hasClass('fa-play')){
+                    $("#carouselExampleIndicators").carousel('cycle');
+                    $("#carouselButton").children("span").removeClass('fa-play');
+                    $("#carouselButton").children("span").addClass('fa-pause');                    
+                }
+            });
+            });
+
+            // Java Script for pop over
+            $(function () {
+                $('[data-toggle="popover"]').popover()
+                })
+
+            $('#myModal').on('shown.bs.modal', function () {
+                  $('#myInput').trigger('focus')
+                })
+
+              
+            
+            
+             
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+header{
+    background-color: rgb(241, 241, 241);
+      }
+      
+  .carousel-item .row{
+    background-color: white;
+    padding: 10px;
+    min-height: 400px;
+    
+  }
+
+  .carousel-item .row img{
+    height: 400px;
+  }
+  .carousel-control-prev-icon .carousel-control-next-icon{
+    background-color: black;
+  }
+
+  .btn-grad{
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(255,164,6,1) 0%, rgba(255,214,0,1) 100%);
+  }
+
+footer{
+    background-color: rgb(241, 241, 241);
+}
+
+ 
